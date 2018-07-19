@@ -24,3 +24,7 @@ $RECYCLE.BIN/
 .idea/workspace.xml
 .idea/.name
 .idea/misc.xml
+.idea/modules.xml
+.idea/markdown-navigator.xml
+.idea/hypervise.iml
+.idea/markdown-navigator/profiles_settings.xml
