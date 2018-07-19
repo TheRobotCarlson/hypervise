@@ -8,10 +8,10 @@ and validate effectiveness on live data.
 
 ## TODO
 - [ ] Create sample projects for testing effectiveness of various models
- - [ ] simple, discrete model
- - [ ] discrete and continous model
- - [ ] irregular, discrete, continous model
- - [ ] evaulate over hyperopt examples
+  - [ ] simple, discrete model
+  - [ ] discrete and continous model
+  - [ ] irregular, discrete, continous model
+  - [ ] evaulate over hyperopt examples
 - [ ] evaluate the effectiveness of Tree of Parzen Estimates (TPE) vs
 other methods such as simulated annealing, hill climbing, genetic
 algorithms, etc
