@@ -12,9 +12,10 @@ and validate effectiveness on live data.
   - [ ] discrete and continous model
   - [ ] irregular, discrete, continous model
   - [ ] evaulate over hyperopt examples
-- [ ] evaluate the effectiveness of Tree of Parzen Estimates (TPE) vs
-other methods such as simulated annealing, hill climbing, genetic
-algorithms, etc
+- [ ] evaluate the effectiveness of Tree of Parzen Estimates (TPE) vs other methods
+  - [ ] simulated annealing
+  - [ ] hill climbing 
+  - [ ] genetic algorithms
 - [ ] read most recent research papers for hyperparamater search
 - [ ] implement top 3 choices for search or find libraries
 - [ ] create search space partitioner
