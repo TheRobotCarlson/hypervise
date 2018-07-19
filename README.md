@@ -7,7 +7,7 @@ and validate effectiveness on live data.
 
 
 ## TODO
-- [ ] Create sample projects for testing effectiveness of various models
+- [ ] Create sample projects for testing effectiveness of hypervise on various models
   - [ ] simple, discrete model
   - [ ] discrete and continous model
   - [ ] irregular, discrete, continous model
