@@ -6,23 +6,25 @@ resources for parallel searches, split data into training and test sets,
 and validate effectiveness on live data.
 
 ## Table of Contents
+
 1.) [Design Details](design.md)
+
 2.) [Notes / Resources](notes.md)
 
 
 ## Milestones
-[ ] ability to hill climb to optimize simple mathematical functions
+- [ ] ability to hill climb to optimize simple mathematical functions
     - [ ] discrete spaces
     - [ ] discretized search of continous spaces
-[ ] ability to search multi dimensional spaces for optimal parameters for
+- [ ] ability to search multi dimensional spaces for optimal parameters for
 more advanced mathematical functions
     - [ ] kd-tree simple region division
     - [ ] true continuous search? probably later
-[ ] ability to search multidimensional spaces in separate processes
+- [ ] ability to search multidimensional spaces in separate processes
     - [ ] process limiting
     - [ ] resource management
     - [ ] "search slicing" with round robin aggregation
-[ ] ability to pause/stop/resume search while continuing with best solution
+- [ ] ability to pause/stop/resume search while continuing with best solution
     - [ ] settings and search saving
     - [ ] stream signaling
 
