@@ -13,6 +13,9 @@ and validate effectiveness on live data.
 
 
 ## Milestones
+- [ ] random search on continuous function
+    - [x] 1 parameter function
+    - [ ] n parameter function
 - [ ] ability to hill climb to optimize simple mathematical functions
     - [ ] discrete spaces
     - [ ] discretized search of continous spaces

@@ -28,3 +28,4 @@ $RECYCLE.BIN/
 .idea/markdown-navigator.xml
 .idea/hypervise.iml
 .idea/markdown-navigator/profiles_settings.xml
+*.pyc

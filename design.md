@@ -13,14 +13,17 @@
         1.) split on all list items
         2.) split on discrete variables
         3.) split on continous variables
-    - as points come in, split regions based on "expected outcome"
+    - as points come in, split regions based on "expected improvement"[2]
         - methods to balance exploration vs exploitation and prevent
          exploring regions already
         - split region is determined by probability that a higher
         solution is within the region
             - region "score" is average of objective score, weighted
             by the probability distribution
-            - probabilit
+    - partitions are stored in the database with each node so data isn't
+     loaded into memory during evaluation. Also allows data to be stored
+      with each node
+
 
 #### searching algorithm
 - hybrid of swarm optimization, hill climbing, random intialization
@@ -40,5 +43,6 @@ split search space and run in a round-robin tournament
         - This can be tracked by the leaf nodes of the kd trees and
         propagated upwards into larger regions.
     - when a higher scorer appears, that becomes the new active model
-    and that region becomes the active search region for hill climing
+    and that region becomes the active search region for hill climbing
 
+[2](https://www.cse.wustl.edu/~garnett/cse515t/spring_2015/files/lecture_notes/12.pdf)
