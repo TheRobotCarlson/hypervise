@@ -6,6 +6,14 @@ a hybrid approach would be best for generality.[1]
 - to use gradient descent/search methods, you have to use continous
 search spaces or map discrete values into discrete search spaces (duh)
 
+- extending / forking hyperopt seems like the better route. They already
+have a lot of code written that does much of what I want. I think I can
+extend their codebase to do what I want to do with it.
+
+- hyperopt has pieces that haven't been touched in 6 months to 2 years.
+I think this provides opportunities to provide meaningful changes /
+additions
+
 ## Current Resources
 1.) [hyperopt implementation](https://github.com/hyperopt/hyperopt)
 

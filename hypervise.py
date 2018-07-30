@@ -10,32 +10,48 @@ class SearchMethods(Enum):
 
 
 def random_search(objective_func, search_space, iterations):
-    aggregate = {}
-    lowest = {"params": {}, "value": None}
+    aggregate = []
+    lowest = {"params": {}, "value": None, "eval": []}
 
-    # TODO: check types
-    for key, value in search_space.items():
-        aggregate[key] = np.random.uniform(value["min"], value["max"], size=iterations)
+    for item in search_space:
+        aggregate.append({})
+        # TODO: check types
+        for key, value in item.items():
+            aggregate[-1][key] = np.random.uniform(value["min"], value["max"], size=iterations)
 
-    for key, value in search_space.items():
-        lowest["params"][key] = aggregate[key][0]
+    for item in aggregate:
+        val = None
+        for key, value in item.items():
+            val = value[0]
+            lowest["params"][key] = value[0]
 
-    lowest["value"] = objective_func(lowest["params"])
+        lowest["eval"].append(val)
+
+    # print(lowest["eval"])
+
+    lowest["value"] = objective_func(lowest["eval"])
 
     for i in range(1, iterations):
-        current = {}
-        for key, value in search_space.items():
-            current[key] = aggregate[key][i]
+        current = {"eval": [], "params": {}}
 
-        value = objective_func(current)
+        for item in aggregate:
+            val = None
+            for key, value in item.items():
+                val = value[0]
+                current["params"][key] = value[0]
+
+                current["eval"].append(val)
+
+        value = objective_func(current["eval"])
         if value is None:
             raise Exception(f"Objective function doesn't return a value for {current}")
 
         if value < lowest["value"]:
             lowest["value"] = value
-            lowest["params"] = current.copy()
+            lowest["params"] = current["params"].copy()
+            lowest["eval"] = current["eval"].copy()
 
-    return lowest
+    return lowest["params"]
 
 #
 #
